@@ -1,0 +1,99 @@
+/*  .input-block {
+    background: red;
+    height: 8.2rem;
+    box-sizing: border-box;
+    padding: 1rem 1rem 0;
+    border: 1px solid var(--color-line-in-white);
+ } */
+
+.login-input-block {
+   position: relative;
+   border: 0;
+   display: flex;
+   flex-direction: row;
+   background: var(--color-box-footer);
+   height: 8.4rem;
+   box-sizing: border-box;
+   padding: 1rem ;
+   border: 1px solid var(--color-border-base);
+   margin: 0;
+}
+
+.login-input-block:first-child {
+   border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.login-input-block+.login-input-block {
+   margin: 0;
+   border-top-width: 0px;
+}
+
+.login-input-block:last-child {
+   border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.login-input-block:only-child {
+   border-radius: 10px;
+}
+
+.login-input-block .label-empty {
+   position: absolute;
+   opacity: 0;
+   top: 0.4rem;
+   transition: opacity 1.5s;
+}
+
+.login-input-block .label-filled {
+   position: absolute;
+   font-size: 1.4rem;
+   color: Var(--color-text-complement);
+   opacity: 1;
+   top: 1rem;
+   transition: opacity 1.5s;
+}
+
+.login-input-block .icon {
+/*    position: absolute;
+   right: 2px;
+   top: 2px;
+   margin: 2.4rem 2rem 0 2rem; */
+   display:flex;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   color: var(--color-text-complement);
+}
+
+.login-input-block input {
+   width: 100%;
+   height: 2.4rem;
+   font: 1.6rem Poppins;
+   line-height: 2.4rem;
+   border: 2px solid #0000;
+   outline: 0;
+   color: var(--color-text-base);
+   background: var(--color-box-footer);
+   margin-top: 2rem;
+}
+
+.login-input-block input:-webkit-autofill,
+.login-input-block input:-webkit-autofill:hover,
+.login-input-block input:-webkit-autofill:focus,
+.login-input-block input:-webkit-autofill:active {
+   -webkit-text-fill-color: #646464 !important;
+   box-shadow: 0 0 0px 1000px #fff inset;
+   border: 0;
+   -webkit-padding-start: 1.4rem !important;
+   margin-top: 2.4rem;
+}
+
+.login-input-block:focus-within::after {
+   width: 0.2rem;
+   height: 6rem;
+   content: '';
+   background: var(--color-primary-light);
+   position: absolute;
+   top: 1.2rem;
+   bottom: 1.2rem;
+   left: 0
+}

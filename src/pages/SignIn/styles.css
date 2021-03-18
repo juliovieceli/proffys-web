@@ -1,0 +1,216 @@
+#page-signin {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--color-text-in-primary);
+   background: var(--color-primary);
+}
+
+.logo-container img {
+   height: 10rem;
+   background: var(--color-primary);
+}
+
+.logo-container {
+   text-align: center;
+   margin-bottom: 3.2rem;
+}
+
+#page-signin-content .background-img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 0%;
+   width: 0%;
+}
+
+#page-signin-content .signin-container {
+   background: var(--color-background);
+   padding: 0 2rem 2rem 2rem;
+   border-radius: 0.4rem;
+   display: flex;
+   flex-direction: column;
+}
+
+#page-signin-content .signin-container h1 {
+   color: var(--color-text-complement);
+   color: var(--color-text-title);
+
+   font: 600 3.6rem Poppins;
+   margin-bottom: 2.4rem;
+}
+
+#page-signin-content .signin-container .forgot-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 2rem 0;
+   margin-bottom: 2rem;
+}
+
+#page-signin-content .signin-container .forgot-container a {
+   font-size: 1.8rem;
+   color: var(--color-text-in-primary)
+}
+
+#page-signin-content .signin-container .check-container {
+   display: block;
+   position: relative;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#page-signin-content .signin-container .check-container input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+}
+
+#page-signin-content .signin-container .check-container .checkmark {
+   position: absolute;
+   top: 1.6rem;
+   left: 0;
+   height: 2.4rem;
+   width: 2.4rem;
+   border-radius: 0.8rem;
+   border: 2px solid var(--color-border-base);
+   background-color: var(--color-box-base);
+}
+
+#page-signin-content .signin-container .check-container:hover input~.checkmark {
+   background-color: #ccc;
+}
+
+#page-signin-content .signin-container .check-container input:checked~.checkmark {
+   background-color: #04D361;
+}
+
+#page-signin-content .signin-container .check-container .checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+
+#page-signin-content .signin-container .check-container input:checked~.checkmark:after {
+   display: block;
+}
+
+#page-signin-content .signin-container .check-container .checkmark:after {
+   left: 0.6rem;
+   top: 0.2rem;
+   width: 0.5rem;
+   height: 1rem;
+   border: solid white;
+   border-width: 0 0.3rem 0.3rem 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
+#page-signin-content .signin-container .forgot-container label {
+   margin-left: 3.6rem;
+   font: 1.4rem Poppins;
+   color: var(--color-text-complement);
+}
+
+#page-signin-content .signin-container .forgot-container a {
+   text-decoration: none;
+   font: 1.4rem Poppins;
+   color: var(--color-text-complement);
+}
+
+#page-signin-content .signin-container .footer {
+   display: flex;
+   flex-direction: row;
+   margin-top: 3.2rem;
+   justify-content: space-between;
+}
+
+#page-signin-content .signin-container .footer div {
+   display: flex;
+   flex-direction: column;
+   height: 4rem;
+}
+
+#page-signin-content .signin-container .footer .signup label {
+   font: 1.2rem Poppins;
+   line-height: 2.4rem;
+   color: var(--color-text-base);
+}
+
+#page-signin-content .signin-container .footer .signup a {
+   font: 600 1.2rem Poppins;
+   color: var(--color-primary);
+}
+
+#page-signin-content .signin-container .footer span {
+   display: flex;
+   height: 2rem;
+   align-items: center;
+   font: 1.2rem Poppins;
+   line-height: 2.4rem;
+   color: var(--color-text-base);
+}
+
+#page-signin-content .signin-container .footer span img {
+   margin-left: 0.8rem;
+}
+
+@media (min-width: 1100px) {
+   #page-signin-content {
+      max-width: 100vw;
+      max-height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   #page-signin-content {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+   }
+   #page-signin-content .logo-container {
+      display: flex;
+      height: 100%;
+      width: 55%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      margin: 0;
+   }
+   #page-signin-content .logo-container h2 {
+      width: 60%;
+      font-size: 3.2rem;
+      padding-right: 2rem;
+   }
+   #page-signin-content .logo-container img {
+      height: 20%;
+   }
+   #page-signin-content .background-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 60%;
+   }
+   #page-signin-content .signin-container {
+      height: 100vh;
+      width: 45%;
+      justify-content: center;
+      padding: 0 11%;
+   }
+   #page-signin-content .signin-container h1 {
+      color: var(--color-text-title);
+   }
+}
